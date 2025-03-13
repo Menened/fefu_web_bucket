@@ -88,7 +88,7 @@ h1, h2 {
 	
 }
 .title{
-	front-size: 32px;
+	font-size: 32px;
 	font-weight: bold;
 }
 /*hits*/
@@ -129,18 +129,35 @@ h1, h2 {
 }
 
 @media (max-width: 1024px){
+	.hits-title {
+		font-size: 50px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	.description{
+		font-size: 20px;
+	}
 	.hits-gallery{
 		flex-direction: column;
 	}
 	.product img {
-    width: 300%;
+    width: 400%;
     height: 300%;
     object-fit: cover;
     border-radius: 5px;
-}
-}
-@media (min-width: 768px){
-	
+	}
+	.price {
+    display: block;
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: bold;
+	}
+	.title {
+    font-size: 50px;
+    font-weight: bold;
+	}
 }
 @media (max-width: 471px){
 	.header{
@@ -153,22 +170,69 @@ h1, h2 {
 		align-items: center;
 		gap: 20px;
 		flex-direction: column;
-}
+	}
 	.header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
+		background-color: #333;
+		color: white;
+		padding: 15px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+	.top-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.hits-title {
+		font-size: 35px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	.price {
+    display: block;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+	}
+	.user-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+	}
+	.main-image {
+    width: 100%;
+    height: 50%;
+    background-color: #ccc;
     display: flex;
-	flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-}
-.top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+    color: #666;
+    border-radius: 5px;
+	}
+	.title {
+    font-size: 45px;
+    font-weight: bold;
+	}
+	.description{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px;
+    background-color: white;
+    padding: 20px;
+    padding-left: 25px;
 }
 }
 
